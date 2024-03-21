@@ -1,3 +1,37 @@
+/* Estilos para el contenedor del navbar */
+.navbar-container {
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para el formulario de búsqueda en el navbar */
+.navbar-search-form {
+    margin-left: auto; /* Empuja el formulario hacia la derecha */
+}
+
+.navbar-search-form .form-control {
+    width: 300px;
+    margin-right: 10px; /* Espacio entre el campo de búsqueda y el botón */
+}
+
+/* Estilos para el enlace de Inicio de Sesión */
+.navbar-nav .nav-link {
+    color: #fff; /* Color de texto */
+    font-weight: bold; /* Negrita */
+    margin-right: 15px; /* Espacio entre enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Color de texto al pasar el mouse */
+}
+
 .formularios{
     display: flex;
     align-items: center;
