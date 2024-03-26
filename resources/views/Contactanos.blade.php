@@ -1,7 +1,8 @@
 @extends('plantilla')
 
 @section('Navbar')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<link rel="stylesheet" type="text/css" href="{{asset('css/tv_teatro.css')}}">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
@@ -13,6 +14,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <!-- Enlaces principales -->
+                    <li>                        
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
                     <li>                        
                         <a class="nav-link" href="/acercade">Acerca De</a>
                     </li>
@@ -27,9 +31,6 @@
                             <li><a class="dropdown-item" href="/camaras">Camaras</a></li>
                             <li><a class="dropdown-item" href="/audio">Audio</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contactanos">Contactanos</a>
                     </li>
                 </ul>
                 <!-- Barra de búsqueda y Enlace de Inicio de Sesión -->
@@ -64,57 +65,52 @@
             </div>
         </div>
     </nav>
-@endsection
-
-@section('Carrusel')
-<div class="Carrusel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carruselindex/Captura de pantalla 2024-02-11 102004.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carruselindex/images (1).jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Teamimg.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  </div>
+            <!-- Breadcrumbs -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contactanos</li>
+            </ol>
+        </nav>
+    </div>
 @endsection
 
 @section('Content')
-<p class="h2 text-center">Nuestra seleccion para ti</p><br>
-<div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/82cf1284-2a54-4c63-b3c7-a216c6f4c19f___76fa68f3e45095f74cfda5a530d3397b.webp" alt="" class="card-img-top w-40">
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/img4.webp" alt="" class="card-img-top w-40 h-80" >
-      </div>
-    </div>
-  </div>
-</div>
+<div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card">
+                    <a href="Index.html">
+                        <img src="https://1000marcas.net/wp-content/uploads/2020/01/logo-Sony.png" class="rounded mx-auto d-block"alt="..."style="width: 40%; height: auto;">
+                    </a>
+                  <div class="card-body">
+                    <h2 class="mb-3">Compártenos tu opinión</h2>
+                    <form>
+                      <div class="form-group">
+                        <label for="nombre" style="margin-top: 10px;">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre" style="margin-top: 10px;">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                      </div>
+                      <div class="form-group">
+                        <label for="correo" style="margin-top: 10px;">Correo Electrónico</label>
+                        <input type="text" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+                      </div>
+                      <div class="form-group">
+                        <label for="contrasena" style="margin-top: 10px;">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escriba aquí su comentario"></textarea>
+                      </div>
+                      <br>
+                      <input type="button" id="comentario" class="btn btn-primary" value="Enviar Comentario">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 @endsection
 
 @section('Footer')

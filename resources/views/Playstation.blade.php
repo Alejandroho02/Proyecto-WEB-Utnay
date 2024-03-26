@@ -1,7 +1,8 @@
 @extends('plantilla')
 
 @section('Navbar')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<link rel="stylesheet" type="text/css" href="{{asset('css/tv_teatro.css')}}">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
@@ -14,6 +15,9 @@
                 <ul class="navbar-nav">
                     <!-- Enlaces principales -->
                     <li>                        
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li>                        
                         <a class="nav-link" href="/acercade">Acerca De</a>
                     </li>
                     <!-- Menú desplegable de Catalogo -->
@@ -22,7 +26,6 @@
                             Catalogo
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/playstation">PlayStation</a></li>
                             <li><a class="dropdown-item" href="/tv_teatro">Tv y Teatro en casa</a></li>
                             <li><a class="dropdown-item" href="/camaras">Camaras</a></li>
                             <li><a class="dropdown-item" href="/audio">Audio</a></li>
@@ -64,57 +67,112 @@
             </div>
         </div>
     </nav>
-@endsection
-
-@section('Carrusel')
-<div class="Carrusel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carruselindex/Captura de pantalla 2024-02-11 102004.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carruselindex/images (1).jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Teamimg.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  </div>
+            <!-- Breadcrumbs -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="/catalogo" class="breadcrumb-link">Catalogo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Playstation</li>
+            </ol>
+        </nav>
+    </div>
 @endsection
 
 @section('Content')
-<p class="h2 text-center">Nuestra seleccion para ti</p><br>
-<div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/82cf1284-2a54-4c63-b3c7-a216c6f4c19f___76fa68f3e45095f74cfda5a530d3397b.webp" alt="" class="card-img-top w-40">
+<style>
+    /* Estilos personalizados aquí */
+    .playstation-section {
+      padding: 50px 0;
+      background-color: #f3f3f3;
+    }
+    .playstation-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .playstation-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .playstation-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .playstation-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .playstation-card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .playstation-card-body {
+      padding: 20px;
+    }
+    .playstation-card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .playstation-card-text {
+      font-size: 16px;
+      color: #555;
+    }
+    .playstation-card-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: none; /* Eliminar subrayado */
+    }
+    .playstation-card:hover .playstation-card-price {
+      text-decoration: none; /* Eliminar subrayado en hover */
+    }
+  </style>
+<section class="playstation-section">
+  <div class="container playstation-container">
+    <h2 class="playstation-title">PlayStation</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="playstation-card">
+          <a href="producto1.html">
+            <img src="Img/p5.jpg" class="card-img-top" alt="...">
+            <div class="playstation-card-body">
+              <h5 class="playstation-card-title">PlayStation 5</h5>
+              <p class="playstation-card-text">Descubre la nueva generación de consolas PlayStation 5. Juega como nunca antes con gráficos impresionantes y carga ultrarrápida.</p>
+              <p class="playstation-card-price">$499.99</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="playstation-card">
+          <a href="producto2.html">
+            <img src="https://blog.latam.playstation.com/tachyon/sites/3/2022/05/a1bf34eb098b3b29e0ae4d436db7cf25449f4276.jpg?resize=1088%2C612&crop_strategy=smart" class="card-img-top" alt="...">
+            <div class="playstation-card-body">
+              <h5 class="playstation-card-title">PlayStation Plus</h5>
+              <p class="playstation-card-text">Disfruta de juegos gratuitos, descuentos exclusivos y más con PlayStation Plus, la suscripción premium de PlayStation.</p>
+              <p class="playstation-card-price">$59.99/año</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="playstation-card">
+          <a href="producto3.html">
+            <img src="Img/accesorios.jpg" class="card-img-top" alt="...">
+            <div class="playstation-card-body">
+              <h5 class="playstation-card-title">Accesorios</h5>
+              <p class="playstation-card-text">Encuentra los mejores accesorios para tu consola PlayStation, incluyendo mandos, auriculares, y más.</p>
+              <p class="playstation-card-price">Desde $19.99</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/img4.webp" alt="" class="card-img-top w-40 h-80" >
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 @endsection
 
 @section('Footer')

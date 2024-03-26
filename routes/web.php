@@ -16,6 +16,35 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/acercade', function () {
+    return view('Acercade');
+});
+
+Route::get('/catalogo', function () {
+    return view('Catalogo');
+});
+
+Route::get('/audio', function () {
+    return view('Audio');
+});
+
+Route::get('/camaras', function () {
+    return view('Camaras');
+});
+
+Route::get('/contactanos', function () {
+    return view('Contactanos');
+});
+
+Route::get('/playstation', function () {
+    return view('Playstation');
+});
+
+Route::get('/tv_teatro', function () {
+    return view('Tv_Teatro');
+});
+
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('Navbar')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
@@ -14,19 +14,10 @@
                 <ul class="navbar-nav">
                     <!-- Enlaces principales -->
                     <li>                        
-                        <a class="nav-link" href="/acercade">Acerca De</a>
+                        <a class="nav-link" href="/">Inicio</a>
                     </li>
-                    <!-- Menú desplegable de Catalogo -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/catalogo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Catalogo
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/playstation">PlayStation</a></li>
-                            <li><a class="dropdown-item" href="/tv_teatro">Tv y Teatro en casa</a></li>
-                            <li><a class="dropdown-item" href="/camaras">Camaras</a></li>
-                            <li><a class="dropdown-item" href="/audio">Audio</a></li>
-                        </ul>
+                    <li>                        
+                        <a class="nav-link" href="/acercade">Acerca De</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contactanos">Contactanos</a>
@@ -64,57 +55,75 @@
             </div>
         </div>
     </nav>
-@endsection
-
-@section('Carrusel')
-<div class="Carrusel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carruselindex/Captura de pantalla 2024-02-11 102004.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carruselindex/images (1).jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Teamimg.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  </div>
+    <!-- Breadcrumbs -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Catalogo</li>
+            </ol>
+        </nav>
+    </div>
 @endsection
 
 @section('Content')
-<p class="h2 text-center">Nuestra seleccion para ti</p><br>
-<div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/82cf1284-2a54-4c63-b3c7-a216c6f4c19f___76fa68f3e45095f74cfda5a530d3397b.webp" alt="" class="card-img-top w-40">
-      </div>
+   <!-- Encabezado llamativo -->
+   <div class="container section-heading">
+        <div class="text-center">
+            <h1>Descubre nuestros servicios</h1>
+            <p>Explora nuestra amplia gama de productos y disfruta de una experiencia única.</p>
+        </div>
     </div>
-  </div>
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/img4.webp" alt="" class="card-img-top w-40 h-80" >
-      </div>
+
+    <!-- Contenido de la página -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <!-- Tarjeta de catálogo 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="Img/Catalogo/playstation.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PlayStation</h5>
+                        <p class="card-text">Descubre la mejor experiencia de juego con PlayStation. Sumérgete en mundos increíbles y vive aventuras emocionantes. ¡No te pierdas nuestros últimos lanzamientos!</p>
+                        <a href="/playstation" class="btn btn-primary btn-custom">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de catálogo 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="Img/Catalogo/tvyteatro.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TV y Teatro en Casa</h5>
+                        <p class="card-text">Disfruta del entretenimiento en la comodidad de tu hogar con nuestra selección de televisores y sistemas de teatro en casa. Vive la experiencia del cine en casa.</p>
+                        <a href="/tv_teatro" class="btn btn-primary btn-custom">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de catálogo 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="Img/Catalogo/camaras.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cámaras</h5>
+                        <p class="card-text">Captura tus momentos más especiales con nuestras cámaras de alta calidad. Desde cámaras compactas hasta cámaras profesionales, tenemos todo lo que necesitas para capturar cada detalle.</p>
+                        <a href="/camaras" class="btn btn-primary btn-custom">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de catálogo 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="Img/Catalogo/audio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Audio</h5>
+                        <p class="card-text">Sumérgete en un sonido envolvente con nuestros sistemas de audio de alta fidelidad. Desde altavoces portátiles hasta sistemas de sonido para el hogar, descubre la mejor calidad de audio para tu música y películas favoritas.</p>
+                        <a href="/audio" class="btn btn-primary btn-custom">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 @endsection
 
 @section('Footer')

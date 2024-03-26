@@ -1,6 +1,6 @@
     // Hacer que el menú de Catálogo se dirija a la página correspondiente al hacer clic
     document.querySelector('.dropdown-toggle').addEventListener('click', function() {
-        window.location.href = "Catalogo.html";
+        window.location.href = "/catalogo";
     });
 
     // Desplegar automáticamente el menú de Catálogo al pasar el cursor sobre él

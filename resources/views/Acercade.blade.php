@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('Navbar')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
@@ -14,7 +14,7 @@
                 <ul class="navbar-nav">
                     <!-- Enlaces principales -->
                     <li>                        
-                        <a class="nav-link" href="/acercade">Acerca De</a>
+                        <a class="nav-link" href="/">Inicio</a>
                     </li>
                     <!-- Menú desplegable de Catalogo -->
                     <li class="nav-item dropdown">
@@ -64,61 +64,127 @@
             </div>
         </div>
     </nav>
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Acerca De</li>
+          </ol>
+      </nav>
+  </div>
 @endsection
 
 @section('Carrusel')
-<div class="Carrusel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <style>
+        /* Estilos adicionales */
+        #slider-container {
+            margin-top: 20px;
+        }
+      /* Estilos personalizados */
+      .texto-centrado {
+        text-align: center;
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+    </style>
+
+ 
+  <h2 class="texto-centrado">Acerca De Sony</h2>
+ 
+    <div id="slider-container" class="container">
+        <!-- Carrusel -->
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Img/PRUEBA SONY.jpg" class="d-block w-100" alt="Silent Hill 2 yei">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/PRUEBA SONYY.jpg" class="d-block w-100" alt="Silent Hill 2 supi">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/prueba sonyyy.jpg" class="d-block w-100" alt="mgs 3 Yyei.jpeg">
+                </div>
+                <div class="carousel-item">
+                   <img src="Img/prueba sonyyyy.jpg" class="d-block w-100" alt="mgs 3 yupi.jpg">
+               </div>
+                <!--  carousel-item  -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carruselindex/Captura de pantalla 2024-02-11 102004.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carruselindex/images (1).jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Teamimg.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  </div>
+    </div>
 @endsection
 
 @section('Content')
-<p class="h2 text-center">Nuestra seleccion para ti</p><br>
-<div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/82cf1284-2a54-4c63-b3c7-a216c6f4c19f___76fa68f3e45095f74cfda5a530d3397b.webp" alt="" class="card-img-top w-40">
-      </div>
+    <style>
+      /* Estilos personalizados aquí */
+      body {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+      }
+      .news-item {
+        margin-left: 20px; /* Alineación más a la derecha */
+        margin-top: 2em; /* Margen superior de dos líneas */
+        text-align: center;
+      }
+      .neew{
+        margin-left: 20px; /* Alineación más a la derecha */
+        margin-top: 2em; /* Margen superior de dos líneas */
+        text-align: center;
+      }
+      .texto-estilizado {
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.5;
+        font-family: "Arial", sans-serif;
+        margin-top: 30px; /* Ajusta el valor según la cantidad de espacio */
+      }
+    </style>
+    
+  <div class="texto-estilizado">
+      Sony es una multinacional japonesa fundada en 1946 cuyas principales líneas de negocio son la electrónica de consumo y la producción musical y cinematográfica, aunque provee incluso de servicios financieros y de seguros en Japón y Filipinas.
     </div>
+   
+ 
+  <h1 class="neew">Comunicado de prensa</h1>
+ 
+ 
+  <div class="news-item">
+    <p><strong>22 de enero de 2024</strong></p>
+    <p>Sony llegó a un acuerdo con World Athletics para el patrocinio</p>
   </div>
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/img4.webp" alt="" class="card-img-top w-40 h-80" >
-      </div>
-    </div>
+ 
+  <div class="news-item">
+    <p><strong>8 de enero de 2024</strong></p>
+    <p>Sony Corporation anuncia el desarrollo de un sistema de creación de contenido espacial, equipado con un visor XR de alta calidad y controladores dedicados a la interacción con objetos 3D</p>
   </div>
-</div>
+ 
+  <div class="news-item">
+    <p><strong>8 de noviembre de 2023</strong></p>
+    <p>Resultados financieros consolidados del segundo trimestre finalizado el 30 de septiembre de 2023</p>
+  </div>
+ 
+  <div class="news-item">
+    <p><strong>9 de octubre de 2023</strong></p>
+    <p>Sony anuncia el lanzamiento del clasificador de células espectrales FP7000 que admite clasificación de parámetros altos con más de 44 colores</p>
+  </div>
+ 
+  <div class="news-item">
+    <p><strong>19 de septiembre de 2023</strong></p>
+    <p>Sony y KDDI triunfan en la transmisión estable de juegos en 5G SA en condiciones de multitud</p>
+  </div>
 @endsection
 
 @section('Footer')
-<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <h5>Enlaces rápidos</h5>

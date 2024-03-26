@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('Navbar')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
@@ -14,6 +14,9 @@
                 <ul class="navbar-nav">
                     <!-- Enlaces principales -->
                     <li>                        
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li>                        
                         <a class="nav-link" href="/acercade">Acerca De</a>
                     </li>
                     <!-- Menú desplegable de Catalogo -->
@@ -24,7 +27,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="/playstation">PlayStation</a></li>
                             <li><a class="dropdown-item" href="/tv_teatro">Tv y Teatro en casa</a></li>
-                            <li><a class="dropdown-item" href="/camaras">Camaras</a></li>
                             <li><a class="dropdown-item" href="/audio">Audio</a></li>
                         </ul>
                     </li>
@@ -64,57 +66,87 @@
             </div>
         </div>
     </nav>
-@endsection
-
-@section('Carrusel')
-<div class="Carrusel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carruselindex/Captura de pantalla 2024-02-11 102004.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carruselindex/images (1).jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Teamimg.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  </div>
+            <!-- Breadcrumbs -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="/catalogo" class="breadcrumb-link">Catalogo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Camaras</li>
+            </ol>
+        </nav>
+    </div>
 @endsection
 
 @section('Content')
-<p class="h2 text-center">Nuestra seleccion para ti</p><br>
-<div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/82cf1284-2a54-4c63-b3c7-a216c6f4c19f___76fa68f3e45095f74cfda5a530d3397b.webp" alt="" class="card-img-top w-40">
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <img src="img/Carruselindex/img4.webp" alt="" class="card-img-top w-40 h-80" >
-      </div>
-    </div>
-  </div>
-</div>
+<div class="container">   
+        <div class="card-columns mt-3">
+    
+          <div class="card text-center border-info">
+            <div class="card-body">
+              <img src="https://mxsonyb2c.vtexassets.com/arquivos/ids/314505/ILCE-7CM2-BQ_GENBA_01_Main_1000x1000px.jpg?v=638331677091530000" class="card-img-top" alt="">
+              <h4 class="card-title">Cámara profesional compacta Alpha | Full Frame Mirrorless | 33.0 MP | 4K 60p/50p | ILCE-7C II</h4>
+              <p class="card-text"> Sensor de imagen full-frame CMOS retroiluminado de 33.0 MP </p>
+              <p class="card-text text-success"> $48,859 </p>
+              <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>          
+    
+          <div class="card text-center border-info">
+            <div class="card-body">
+              <img src="https://mxsonyb2c.vtexassets.com/arquivos/ids/314529/ILCE-7CR-BQ_GENBA_01_Main_1000x1000px.jpg?v=638333225816530000" class="card-img-top" alt="">
+              <h4 class="card-title">TiCámara profesional compacta Alpha | Full Frame Mirrorless | 61.0 MP | 4K 60p/50p | ILCE-7CR</h4>
+              <p class="card-text">Sensor CMOS Exmor R™ retroiluminado full-frame de 61.0 MP
+                El motor de procesamiento avanzado BIONZ XR™ aumenta la velocidad de procesamiento general </p>
+                                    <p class="card-text text-success"> $60,029 </p>
+              <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>          
+      
+          <div class="card text-center border-info">
+            <div class="card-body">
+              <img src="https://mxsonyb2c.vtexassets.com/arquivos/ids/313852/c0af6c698d7f4a72a5bb3630564b7e79.jpg?v=638248361523630000" class="card-img-top" alt="">
+              <h4 class="card-title">Cámara APS-C a6700 premium con montura E</h4>
+              <p class="card-text">Sensor Exmor R™ CMOS APS-C retroiluminado con 26.0 megapíxeles
+                El motor de procesamiento avanzado BIONZ XR™ aumenta la velocidad de procesamiento general en hasta 8x
+                Unidad de procesamiento con inteligencia artificial para reconocer objetivos de forma más amplia y precisa </p>
+                <p class="card-text text-success"> $48,859 </p>
+              <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>   
+          <div class="card text-center border-info">
+            <div class="card-body">
+              <img src="https://mxsonyb2c.vtexassets.com/arquivos/ids/313057/GENBA_ZV-E1-B_01_Main.jpg?v=638181173465000000" class="card-img-top" alt="">
+              <h4 class="card-title">Camara para videoblogs full-frame ZV-E1</h4>
+              <p class="card-text">Unidad de procesamiento con inteligencia artificial para reconocer sujetos de forma más amplia y precisa. </p>
+              <p class="card-text text-success"> $32,000</p>
+              <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div> 
+          <div class="card text-center border-info">
+            <div class="card-body">
+              <img src="https://mxsonyb2c.vtexassets.com/arquivos/ids/313699/ILCE-6100Y-1000x1000px-01.jpg?v=638235652737100000" class="card-img-top" alt="">
+              <h4 class="card-title">Cámara digital con lente intercambiable para vloggers</h4>
+              <p class="card-text">Cámara digital con lente intercambiable para vloggers
+                Sensor CMOS Exmor™ APS-C de gran tamaño y 24.2 MP
+                Micrófono direccional de 3 cápsulas con paraviento </p>
+                <p class="card-text text-success"> $28,000 </p>
+              <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div> 
+          <div class="card text-center border-info">
+            <div class="card-body">
+              <img src="https://mxsonyb2c.vtexassets.com/arquivos/ids/262690-1200-auto?v=637364975173900000&width=1200&height=auto&aspect=true" class="card-img-top" alt="">
+              <h4 class="card-title">Cámara compacta full-frame Alpha 7C</h4>
+              <p class="card-text">Grabación de películas 4K versátil para creadores
+                Sensor de imagen CMOS Exmor R™ full-frame de 24,2 megapíxeles
+                El cuerpo de la cámara full-frame con estabilización más pequeño y ligero del mundo </p>
+                <p class="card-text text-success"> $50,859 </p>
+              <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>        
+        </div>
+      </div>  
 @endsection
 
 @section('Footer')
