@@ -80,58 +80,12 @@
 @endsection
 
 @section('Content')
-  <!-- Barra para redireccionar a otras páginas en TV Y TEATRO-->
-  <div class="">
-        <div class="titulobar">
-            <br>
-                <h1>Televisores y Teatros en casa</h1>
-            <br>
-        </div>
-        <div class="divbar">
-            <a href="#Televisores">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img src="Img/tv_treatro/tele.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>Televisores</h6>
-                    </div>
-                </div>
-            </a>
-            <a href="#Teatroscasa">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img  src="Img/tv_treatro/teatrocasa.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>
-                            Teatros en casa
-                        </h6>
-                    </div>
-                </div>
-            </a>
-            <a href="#Bluray">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img src="Img/tv_treatro/bluray.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>
-                            Reproductores de B...
-                        </h6>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- Aqui van los apartados de cada contenido -->
+   <!-- Aqui van los apartados de cada contenido -->
     <div>
         <div id="Televisores">
             <div>
                 <br>
-                <br><br><br><br>
-                <p><h1>Televisores</h1></p>
+                <p style="font-size: 30px;">Televisores</p>
                 <br>
             </div>
             <div>
