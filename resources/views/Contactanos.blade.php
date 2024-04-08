@@ -1,3 +1,41 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $errors = array();
+
+    // Validación del nombre
+    if (empty($_POST["nombre"])) {
+        $errors[] = "El nombre es requerido.";
+    }
+
+    // Validación del apellido
+    if (empty($_POST["apellido"])) {
+        $errors[] = "El apellido es requerido.";
+    }
+
+    // Validación del correo electrónico
+    if (empty($_POST["correo"])) {
+        $errors[] = "El correo electrónico es requerido.";
+    } elseif (!filter_var($_POST["correo"], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "El formato del correo electrónico es inválido.";
+    }
+
+    // Validación del mensaje
+    if (empty($_POST["mensaje"])) {
+        $errors[] = "El mensaje es requerido.";
+    }
+
+    // Si no hay errores, procesa el formulario
+    if (empty($errors)) {
+        // Procesar el formulario, por ejemplo, guardar en la base de datos o enviar por correo electrónico
+        // Aquí puedes agregar tu lógica para procesar el formulario
+
+        // Redirigir a alguna página de éxito
+        header("Location: pagina_de_exito.php");
+        exit();
+    }
+}
+?>
+
 @extends('plantilla')
 
 @section('Navbar')
@@ -86,25 +124,35 @@
                     </a>
                   <div class="card-body">
                     <h2 class="mb-3">Compártenos tu opinión</h2>
-                    <form>
+                    <form action="{{ route('contactanos.store') }}" method="post">
+                        @csrf
                       <div class="form-group">
                         <label for="nombre" style="margin-top: 10px;">Nombre</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                        @error('nombre')
+                        <span class="error">{{ $message }}</span>
+                    @enderror
                       </div>
                       <div class="form-group">
                         <label for="nombre" style="margin-top: 10px;">Apellido</label>
                         <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                        @error('apellido')
+                        <span class="error">{{ $message }}</span>
+                    @enderror
                       </div>
                       <div class="form-group">
                         <label for="correo" style="margin-top: 10px;">Correo Electrónico</label>
                         <input type="text" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+                            @error('correo')
+                                <span class="error">{{ $message }}</span>
+                            @enderror
                       </div>
                       <div class="form-group">
                         <label for="contrasena" style="margin-top: 10px;">Mensaje</label>
                         <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escriba aquí su comentario"></textarea>
                       </div>
                       <br>
-                      <input type="button" id="comentario" class="btn btn-primary" value="Enviar Comentario">
+                      <input type="submit" id="comentario" class="btn btn-primary" value="Enviar Comentario">
                     </form>
                   </div>
                 </div>

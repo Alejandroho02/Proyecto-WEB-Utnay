@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ComentarioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +32,8 @@ Route::get('/audio', function () {
 Route::get('/camaras', function () {
     return view('Camaras');
 });
-
+Route::get('/contactanos', [ComentarioController::class, 'index'])->name('contactanos.index');
+Route::post('/contactanos', [ComentarioController::class, 'store'])->name('contactanos.store');
 Route::get('/contactanos', function () {
     return view('Contactanos');
 });
