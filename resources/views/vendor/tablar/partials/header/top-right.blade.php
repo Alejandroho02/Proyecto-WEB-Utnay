@@ -23,12 +23,6 @@
             @php( $logout_url = $logout_url ? url($logout_url) : '' )
             @php( $setting_url = $setting_url ? url($setting_url) : '' )
         @endif
-
-        <a href="#" class="dropdown-item">Status</a>
-        <a href="{{$profile_url}}" class="dropdown-item">Profile</a>
-        <a href="#" class="dropdown-item">Feedback</a>
-        <div class="dropdown-divider"></div>
-        <a href="{{$setting_url}}" class="dropdown-item">Settings</a>
         <a href="{{ url('/') }}" class="dropdown-item">Inicio</a>
 
 
