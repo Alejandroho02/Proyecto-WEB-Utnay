@@ -8,13 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/index.css')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {{-- Custom Meta Tags --}}
+    @yield('meta_tags')
+    {{-- Title --}}
+    <title>
+        @yield('title_prefix', config('tablar.title_prefix', ''))
+        @yield('title', config('tablar.title', 'Tablar'))
+        @yield('title_postfix', config('tablar.title_postfix', ''))
+    </title>
+    <!-- CSS files -->
+    @if(config('tablar','vite'))
+        @vite('resources/js/app.js')
+    @endif
+    {{-- Custom Stylesheets (post Tablar) --}}
+    @yield('tablar_css')    
     <title>Sony</title>
 </head>
 <body>
+    @yield('tablar_js')
     <header>
         @yield('Navbar')
+        
     </header>
     <section>
+        
         @yield('Carrusel')
         @yield('Content')
     </section>

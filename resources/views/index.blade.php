@@ -41,11 +41,26 @@
                                 <button class="btn btn-outline-success" type="submit">Buscar</button>
                             </form>
                         </li>
+                        <ul>
+                          <li>
+                            <div class="nav-item dropdown">
+                              <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
+                                 aria-label="Open user menu">
+                                                  <span class="avatar avatar-sm"
+                                                        style="background-image: url({{asset('assets/avatars/000m.jpg')}})"></span>
+                                  <div class="d-none d-xl-block ps-2">
+                                      <div>{{Auth()->user()->name}}</div>
+                                      <div class="mt-1 small text-muted">Usuario</div>
+                                  </div>
+                              </a>
+                          </li>
+                        </ul>
                         <ul class="navbar-nav ms-auto">
+                          
                         @if (Route::has('login'))
                             @auth
                                 <li class="nav-item">
-                                    <a href="{{ url('/home') }}" class="nav-link">Home</a>
+                                    <a href="{{ url('/home') }}" class="nav-link">Perfil</a>
                                 </li>
                             @else
                                 <li class="nav-item">
