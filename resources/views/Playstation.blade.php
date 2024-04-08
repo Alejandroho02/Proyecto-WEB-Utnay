@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('Plantilla')
 
 @section('Navbar')
 <link rel="stylesheet" type="text/css" href="{{asset('css/tv_teatro.css')}}">
@@ -137,7 +137,7 @@
       <div class="col-md-4">
         <div class="playstation-card">
           <a href="producto1.html">
-            <img src="Img/p5.jpg" class="card-img-top" alt="...">
+            <img src="img/p5.jpg" class="card-img-top" alt="...">
             <div class="playstation-card-body">
               <h5 class="playstation-card-title">PlayStation 5</h5>
               <p class="playstation-card-text">Descubre la nueva generación de consolas PlayStation 5. Juega como nunca antes con gráficos impresionantes y carga ultrarrápida.</p>
@@ -161,7 +161,7 @@
       <div class="col-md-4">
         <div class="playstation-card">
           <a href="producto3.html">
-            <img src="Img/accesorios.jpg" class="card-img-top" alt="...">
+            <img src="img/accesorios.jpg" class="card-img-top" alt="...">
             <div class="playstation-card-body">
               <h5 class="playstation-card-title">Accesorios</h5>
               <p class="playstation-card-text">Encuentra los mejores accesorios para tu consola PlayStation, incluyendo mandos, auriculares, y más.</p>

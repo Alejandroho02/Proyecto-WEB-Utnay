@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('Plantilla')
 
 @section('Navbar')
 <link rel="stylesheet" type="text/css" href="{{asset('css/tv_teatro.css')}}">
@@ -80,75 +80,6 @@
 @endsection
 
 @section('Content')
-     <!-- Barra para redireccionar a otras páginas en AUDIO-->
-     <div class="">
-        <div class="titulobar">
-            <br>
-                <h1>Audio</h1>
-            <br>
-        </div>
-        <div class="divbar">
-            <a href="#Audifonos">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img src="Img/Audioimg/audifonos.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>Audifonos</h6>
-                    </div>
-                </div>
-            </a>
-            <a href="#Bocinas">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img  src="Img/Audioimg/bocinainalambrica.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>
-                            Bocinas inalámbricas
-                        </h6>
-                    </div>
-                </div>
-            </a>
-            <a href="#Walkman">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img src="Img/Audioimg/walkman.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>
-                            Walkman
-                        </h6>
-                    </div>
-                </div>
-            </a>
-            <a href="#Grabadora">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img src="Img/Audioimg/grabadora.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>
-                            Grabadora de voz Digital
-                        </h6>
-                    </div>
-                </div>
-            </a>
-            <a href="#Sistemaaudio">
-                <div class="divbar1">
-                    <div class="imagbar">
-                        <img src="Img/tv_treatro/teatrocasa.png">
-                    </div>
-                    <div class="txtbar">
-                        <h6>
-                            Sistema de Audio
-                        </h6>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-
     <!-- Aqui van los apartados de cada contenido -->
     <div>
         <div id="Audifonos">
@@ -162,7 +93,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/audifonos1.png" class="card-img-top" alt="audifonos1">
+                            <img src="img/Audioimg/audifonos1.png" class="card-img-top" alt="audifonos1">
                             <div class="card-body">
                                 <h5 class="card-title">Audífonos True Wireless con El Mejor Noise Cancelling WF-1000XM5</h5>
                                 <p class="1h-1 card-text">
@@ -182,7 +113,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/audifonos2.png" class="card-img-top" alt="audifonos2">
+                            <img src="img/Audioimg/audifonos2.png" class="card-img-top" alt="audifonos2">
                             <div class="card-body">
                                 <h5 class="card-title">Audífonos inalámbricos con noise cancelling WF-C700N</h5>
                                 <p class="card-text">
@@ -201,7 +132,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/audifonos3.png" class="card-img-top" alt="audifonos3">
+                            <img src="img/Audioimg/audifonos3.png" class="card-img-top" alt="audifonos3">
                             <div class="card-body">
                                 <h5 class="card-title">Audífonos inalámbricos WH-CH720N</h5>                                
                                 <p class="card-text">
@@ -232,7 +163,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/bocina1.png" class="card-img-top" alt="bocinas1">
+                            <img src="img/Audioimg/bocina1.png" class="card-img-top" alt="bocinas1">
                         <div class="card-body">
                             <h5 class="card-title">Bocina inalámbrica portátil XB100</h5>
                             <p class="card-text">
@@ -252,7 +183,7 @@
                 </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/bocina2.png" class="card-img-top" alt="bocinas2">
+                            <img src="img/Audioimg/bocina2.png" class="card-img-top" alt="bocinas2">
                             <div class="card-body">
                                 <h5 class="card-title">Bocina inalámbrica para fiestas XV800 de la serie X</h5>
                                 <p class="card-text">
@@ -272,7 +203,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/bocina3.png" class="card-img-top" alt="Bocinas3">
+                            <img src="img/Audioimg/bocina3.png" class="card-img-top" alt="Bocinas3">
                             <div class="card-body">
                                 <h5 class="card-title">SRS-XV900 Bocinas inalámbricas de alta potencia</h5>
                                 <p class="card-text">
@@ -302,7 +233,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/walk1.png" class="card-img-top" alt="walkman1">
+                            <img src="img/Audioimg/walk1.png" class="card-img-top" alt="walkman1">
                             <div class="card-body">
                                 <h5 class="card-title">Walkman® A300 serie A</h5>
                                 <p class="card-text">
@@ -321,7 +252,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/walk2.png" class="card-img-top" alt="walk2">
+                            <img src="img/Audioimg/walk2.png" class="card-img-top" alt="walk2">
                             <div class="card-body">
                                 <h5 class="card-title">Reproductor multimedia digital Walkman® WM1AM2</h5>
                                 <p class="card-text">
@@ -341,7 +272,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/walk3.png" class="card-img-top" alt="walk3">
+                            <img src="img/Audioimg/walk3.png" class="card-img-top" alt="walk3">
                             <div class="card-body">
                                 <h5 class="card-title">Walkman® resistente al agua y al 
                                     polvo con tecnología inalámbrica BLUETOOTH®
@@ -377,7 +308,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/grabadora1.png" class="card-img-top" alt="grabadora1">
+                            <img src="img/Audioimg/grabadora1.png" class="card-img-top" alt="grabadora1">
                             <div class="card-body">
                                 <h5 class="card-title">Grabadora de voz digital con USB integrado</h5>
                                 <p class="1h-1 card-text">
@@ -398,7 +329,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/grabadora2.png" class="card-img-top" alt="grabadora2">
+                            <img src="img/Audioimg/grabadora2.png" class="card-img-top" alt="grabadora2">
                             <div class="card-body">
                                 <h5 class="card-title">Grabadora digital de voz TX660 de la serie TX</h5>
                                 <p class="card-text">
@@ -418,7 +349,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/grabadora3.png" class="card-img-top" alt="grabadora3">
+                            <img src="img/Audioimg/grabadora3.png" class="card-img-top" alt="grabadora3">
                             <div class="card-body">
                                 <h5 class="card-title">Grabadora digital de voz UX570 de la serie UX</h5>                                
                                 <p class="card-text">
@@ -448,7 +379,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/sistemaaudio1.png" class="card-img-top" alt="Sistemaaudio1">
+                            <img src="img/Audioimg/sistemaaudio1.png" class="card-img-top" alt="Sistemaaudio1">
                             <div class="card-body">
                                 <h5 class="card-title">Sistema de audio de alta potencia V13 con tecnología BLUETOOTH®</h5>
                                 <p class="1h-1 card-text">
@@ -469,7 +400,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/sistemaaudio2.png" class="card-img-top" alt="sistemaaudio2">
+                            <img src="img/Audioimg/sistemaaudio2.png" class="card-img-top" alt="sistemaaudio2">
                             <div class="card-body">
                                 <h5 class="card-title">Sistema de audio de alta potencia con tecnología BLUETOOTH® V02</h5>
                                 <p class="card-text">
@@ -488,7 +419,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="Img/Audioimg/sistemaaudio3.png" class="card-img-top" alt="sistemaaudio3">
+                            <img src="img/Audioimg/sistemaaudio3.png" class="card-img-top" alt="sistemaaudio3">
                             <div class="card-body">
                                 <h5 class="card-title">Tocadiscos con conectividad BLUETOOTH®</h5>                                
                                 <p class="card-text">

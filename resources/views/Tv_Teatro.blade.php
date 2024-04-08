@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('Plantilla')
 
 @section('Navbar')
 <link rel="stylesheet" type="text/css" href="{{asset('css/tv_teatro.css')}}">
@@ -92,7 +92,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/tele1.png') }}" class="card-img-top" alt="tele1">
+                            <img src="{{ asset('img/tv_treatro/tele1.png') }}" class="card-img-top" alt="tele1">
                             <div class="card-body">
                                 <h5 class="card-title">X90L| BRAVIA XR | Full Array LED | 4K Ultra HD | Smart TV (Google TV)</h5>
                                 <p class="card-text">
@@ -112,7 +112,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/tele2.png') }}" class="card-img-top" alt="tele2">
+                            <img src="{{ asset('img/tv_treatro/tele2.png') }}" class="card-img-top" alt="tele2">
                             <div class="card-body">
                                 <h5 class="card-title">X77L | 4K Ultra HD | Smart TV (Google TV)</h5>
                                 <p class="card-text">
@@ -132,7 +132,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/tele3.png') }}" class="card-img-top" alt="tele3">
+                            <img src="{{ asset('img/tv_treatro/tele3.png') }}" class="card-img-top" alt="tele3">
                             <div class="card-body">
                                 <h5 class="card-title">A80L| BRAVIA XR | OLED | 4K Ultra HD | Smart TV (Google TV)</h5>                                
                                 <p class="card-text">
@@ -164,7 +164,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/sonido1.png') }}" class="card-img-top" alt="sonido1">
+                            <img src="{{ asset('img/tv_treatro/sonido1.png') }}" class="card-img-top" alt="sonido1">
                             <div class="card-body">
                                 <h5 class="card-title">Barra de sonido de 2.1 canales con potente subwoofer inalámbrico | HT-S400</h5>
                                 <p class="card-text">
@@ -183,7 +183,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/sonido2.png') }}" class="card-img-top" alt="sonido2">
+                            <img src="{{ asset('img/tv_treatro/sonido2.png') }}" class="card-img-top" alt="sonido2">
                             <div class="card-body">
                                 <h5 class="card-title">Sistema de cine en casa con tecnología 360 Spatial Sound Mapping y Dolby Atmos®/DTS:X® | HT-A9</h5>
                                 <p class="card-text">
@@ -202,7 +202,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/sonido3.png') }}" class="card-img-top" alt="sonido3">
+                            <img src="{{ asset('img/tv_treatro/sonido3.png') }}" class="card-img-top" alt="sonido3">
                             <div class="card-body">
                                 <h5 class="card-title">Sistema de Teatro en Casa de 5.1 canales con bocinas traseras inalámbricas | HT-S40R</h5>
                                 <p class="card-text">
@@ -232,7 +232,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/dvd1.png') }}" class="card-img-top" alt="dvd1">
+                            <img src="{{ asset('img/tv_treatro/dvd1.png') }}" class="card-img-top" alt="dvd1">
                             <div class="card-body">
                                 <h5 class="card-title">Reproductor de Blu-ray Disc con mejora 4K</h5>
                                 <p class="card-text">
@@ -251,7 +251,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/dvd2.png') }}" class="card-img-top" alt="dvd2">
+                            <img src="{{ asset('img/tv_treatro/dvd2.png') }}" class="card-img-top" alt="dvd2">
                             <div class="card-body">
                                 <h5 class="card-title">Reproductor de Blu-ray™ 4K Ultra HD | UBP-X700 con High-Resolution Audio</h5>
                                 <p class="card-text">
@@ -270,7 +270,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('Img/tv_treatro/dvd3.png') }}" class="card-img-top" alt="dvd3">
+                            <img src="{{ asset('mg/tv_treatro/dvd3.png') }}" class="card-img-top" alt="dvd3">
                             <div class="card-body">
                                 <h5 class="card-title">Reproductor de Blu-ray Disc™ con super Wi-Fi®</h5>
                                 <p class="card-text">
