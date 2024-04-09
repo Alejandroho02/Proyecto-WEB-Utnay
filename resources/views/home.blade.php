@@ -33,40 +33,40 @@
                                     <h2 class="card-title text-center mb-4">Modificar Datos del usuario</h2>
                                     <div class="mb-3">
                                         <label class="form-label">Nombre</label>
-                                        <input type="text" name="name" class="form-control" value="{{ Auth::user()->name }}" @role('normal') disabled @endrole>
+                                        <input type="text" name="name" class="form-control" value="{{ Auth::user()->name }}" @if(Auth::user()->hasRole('normal')) readonly @endif>
                                         @error('name')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Correo Electronico</label>
-                                        <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" @role('normal') disabled @endrole>
+                                        <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" @if(Auth::user()->hasRole('normal')) readonly @endif>
                                         @error('email')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Contraseña</label>
-                                        <input type="password" name="password" class="form-control" placeholder="Password" @role('normal') disabled @endrole>
+                                        <label class="form-label">Nueva Contraseña</label>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" @if(Auth::user()->hasRole('normal')) readonly @endif>
                                         @error('password')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Confirmar contraseña</label>
-                                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar contraseña" @role('normal') disabled @endrole>
+                                        <label class="form-label">Confirmar Nueva Contraseña</label>
+                                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar contraseña" @if(Auth::user()->hasRole('normal')) readonly @endif>
                                         @error('password_confirmation')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
                                     </div>
-                                    @role('admin')
+                                    @if(Auth::user()->hasRole('admin'))
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-primary w-100">Modificar</button>
                                     </div>
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-primary w-100">Eliminar</button>
                                     </div>
-                                    @endrole
+                                    @endif
                                 </div>
                             </form>
                         </div>
