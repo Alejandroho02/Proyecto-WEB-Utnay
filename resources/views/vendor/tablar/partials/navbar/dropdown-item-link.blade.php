@@ -1,4 +1,5 @@
 <li class="nav-item {{ $item['class'] }}" @isset($item['id']) id="{{ $item['id'] }}" @endisset>
+
     <a class="nav-link " @isset($item['target']) target="{{ $item['target'] }}" @endisset
     {!! $item['data-compiled'] ?? '' !!}
     href="{{ $item['href'] }}">
