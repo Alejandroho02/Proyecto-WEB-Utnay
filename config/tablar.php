@@ -42,7 +42,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'img/logo-Sony.png',
+            'path' => 'assets/tablar-logo.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -145,9 +145,51 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'text' => 'Perfil de usuario',
+            'text' => 'Home',
             'icon' => 'ti ti-home',
-            'url' => 'index'
+            'url' => 'home'
+        ],
+
+        [
+            'text' => 'Support 1',
+            'url' => '#',
+            'icon' => 'ti ti-help',
+            'active' => ['support1'],
+            'submenu' => [
+                [
+                    'text' => 'Ticket',
+                    'url' => 'support1',
+                    'icon' => 'ti ti-article',
+                ]
+            ],
+        ],
+
+        [
+            'text' => 'Support 2',
+            'url' => '#',
+            'icon' => 'ti ti-help',
+            'active' => ['support2'],
+            'submenu' => [
+                [
+                    'text' => 'Ticket',
+                    'url' => 'support2',
+                    'icon' => 'ti ti-article',
+                ]
+            ],
+        ],
+
+        [
+            'text' => 'Support 3',
+            'url' => '#',
+            'icon' => 'ti ti-help',
+            'active' => ['support3'],
+            'submenu' => [
+                [
+                    'text' => 'Ticket',
+                    'url' => 'support3',
+                    'icon' => 'ti ti-article',
+                ]
+            ],
         ],
 
     ],

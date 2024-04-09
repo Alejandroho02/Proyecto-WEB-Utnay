@@ -8,6 +8,9 @@
     <div class="navbar-nav flex-row order-md-last">
 
         <div class="nav-item d-none d-md-flex me-3">
+            <div class="btn-list">
+                @include('tablar::partials.header.header-button')
+            </div>
         </div>
 
         <div class="d-none d-md-flex">
@@ -18,4 +21,3 @@
         @include('tablar::partials.header.top-right')
     </div>
 </div>
-
