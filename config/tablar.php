@@ -42,7 +42,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'assets/tablar-logo.png',
+            'path' => 'img/logo-Sony.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -145,9 +145,9 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'text' => 'Home',
+            'text' => 'Perfil de usuario',
             'icon' => 'ti ti-home',
-            'url' => 'home'
+            'url' => 'index'
         ],
 
     ],

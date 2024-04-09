@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ComentarioController;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,4 +52,10 @@ Route::get('/tv_teatro', function () {
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/user/edit', [\App\Http\Controllers\HomeController::class, 'edit'])->name('user.edit');
+
+Route::put('/user/update', [\App\Http\Controllers\HomeController::class, 'update'])->name('user.update');
+
+
 
