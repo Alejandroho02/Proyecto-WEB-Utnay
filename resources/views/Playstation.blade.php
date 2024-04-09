@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('Plantilla')
 
 @section('Navbar')
 <link rel="stylesheet" type="text/css" href="{{asset('css/tv_teatro.css')}}">

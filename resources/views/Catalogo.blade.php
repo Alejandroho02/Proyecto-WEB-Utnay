@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('Plantilla')
 
 @section('Navbar')
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
