@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
+            <a class="navbar-brand" href="/"><img style="width: 50%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
             <!-- Botón de hamburguesa para pantallas pequeñas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -99,16 +99,16 @@
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Img/PRUEBA SONY.jpg" class="d-block w-100" alt="Silent Hill 2 yei">
+                    <img src="img/PRUEBA SONY.jpg" class="d-block w-100" alt="Silent Hill 2 yei">
                 </div>
                 <div class="carousel-item">
-                    <img src="Img/PRUEBA SONYY.jpg" class="d-block w-100" alt="Silent Hill 2 supi">
+                    <img src="img/PRUEBA SONYY.jpg" class="d-block w-100" alt="Silent Hill 2 supi">
                 </div>
                 <div class="carousel-item">
-                    <img src="Img/prueba sonyyy.jpg" class="d-block w-100" alt="mgs 3 Yyei.jpeg">
+                    <img src="img/prueba sonyyy.jpg" class="d-block w-100" alt="mgs 3 Yyei.jpeg">
                 </div>
                 <div class="carousel-item">
-                   <img src="Img/prueba sonyyyy.jpg" class="d-block w-100" alt="mgs 3 yupi.jpg">
+                   <img src="img/prueba sonyyyy.jpg" class="d-block w-100" alt="mgs 3 yupi.jpg">
                </div>
                 <!--  carousel-item  -->
             </div>

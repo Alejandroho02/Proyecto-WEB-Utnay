@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
+            <a class="navbar-brand" href="/"><img style="width: 50%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
             <!-- Botón de hamburguesa para pantallas pequeñas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@
             <!-- Tarjeta de catálogo 1 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{ asset('Img/Catalogo/playstation.png') }}" class="card-img-top" alt="PlayStation">
+                    <img src="{{ asset('img/Catalogo/playstation.png') }}" class="card-img-top" alt="PlayStation">
                     <div class="card-body">
                         <h5 class="card-title">PlayStation</h5>
                         <p class="card-text">Descubre la mejor experiencia de juego con PlayStation. Sumérgete en mundos increíbles y vive aventuras emocionantes. ¡No te pierdas nuestros últimos lanzamientos!</p>
@@ -92,7 +92,7 @@
             <!-- Tarjeta de catálogo 2 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{ asset('Img/Catalogo/tvyteatro.png') }}" class="card-img-top" alt="TV y Teatro en Casa">
+                    <img src="{{ asset('img/Catalogo/tvyteatro.png') }}" class="card-img-top" alt="TV y Teatro en Casa">
                     <div class="card-body">
                         <h5 class="card-title">TV y Teatro en Casa</h5>
                         <p class="card-text">Disfruta del entretenimiento en la comodidad de tu hogar con nuestra selección de televisores y sistemas de teatro en casa. Vive la experiencia del cine en casa.</p>
@@ -103,7 +103,7 @@
             <!-- Tarjeta de catálogo 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{ asset('Img/Catalogo/camaras.png') }}" class="card-img-top" alt="Cámaras">
+                    <img src="{{ asset('img/Catalogo/camaras.png') }}" class="card-img-top" alt="Cámaras">
                     <div class="card-body">
                         <h5 class="card-title">Cámaras</h5>
                         <p class="card-text">Captura tus momentos más especiales con nuestras cámaras de alta calidad. Desde cámaras compactas hasta cámaras profesionales, tenemos todo lo que necesitas para capturar cada detalle.</p>
@@ -114,7 +114,7 @@
             <!-- Tarjeta de catálogo 4 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{ asset('Img/Catalogo/audio.jpg') }}" class="card-img-top" alt="Audio">
+                    <img src="{{ asset('img/Catalogo/audio.jpg') }}" class="card-img-top" alt="Audio">
                     <div class="card-body">
                         <h5 class="card-title">Audio</h5>
                         <p class="card-text">Sumérgete en un sonido envolvente con nuestros sistemas de audio de alta fidelidad. Desde altavoces portátiles hasta sistemas de sonido para el hogar, descubre la mejor calidad de audio para tu música y películas favoritas.</p>

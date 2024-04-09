@@ -34,6 +34,7 @@ Route::get('/camaras', function () {
 });
 Route::get('/contactanos', [ComentarioController::class, 'index'])->name('contactanos.index');
 Route::post('/contactanos', [ComentarioController::class, 'store'])->name('contactanos.store');
+
 Route::get('/contactanos', function () {
     return view('Contactanos');
 });

@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
+            <a class="navbar-brand" href="/"><img style="width: 50%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1024px-Sony_logo_%28white%29.svg.png" alt="logo" class="logo"></a>   
             <!-- Botón de hamburguesa para pantallas pequeñas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -137,7 +137,7 @@
       <div class="col-md-4">
         <div class="playstation-card">
           <a href="producto1.html">
-            <img src="Img/p5.jpg" class="card-img-top" alt="...">
+            <img src="img/p5.jpg" class="card-img-top" alt="...">
             <div class="playstation-card-body">
               <h5 class="playstation-card-title">PlayStation 5</h5>
               <p class="playstation-card-text">Descubre la nueva generación de consolas PlayStation 5. Juega como nunca antes con gráficos impresionantes y carga ultrarrápida.</p>
@@ -161,7 +161,7 @@
       <div class="col-md-4">
         <div class="playstation-card">
           <a href="producto3.html">
-            <img src="Img/accesorios.jpg" class="card-img-top" alt="...">
+            <img src="img/accesorios.jpg" class="card-img-top" alt="...">
             <div class="playstation-card-body">
               <h5 class="playstation-card-title">Accesorios</h5>
               <p class="playstation-card-text">Encuentra los mejores accesorios para tu consola PlayStation, incluyendo mandos, auriculares, y más.</p>
