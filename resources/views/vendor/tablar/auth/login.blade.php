@@ -1,6 +1,7 @@
 @extends('tablar::auth.layout')
 @section('title', 'Login')
 @section('content')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <div class="container container-tight py-4">
         <div class="text-center mb-1 mt-5">
             <a href="" class="navbar-brand navbar-brand-autodark">
@@ -53,6 +54,7 @@
                             <span class="form-check-label">Recordarme en este dispositivo</span>
                         </label>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LcrDpcpAAAAAKMOTzrBVQt6C2YrEuLl7qep9Buo"></div>
                     <div class="form-footer">
                         <button type="submit" class="btn btn-primary w-100">Acceder</button>
                     </div>
